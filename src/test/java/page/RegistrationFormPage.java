@@ -5,13 +5,14 @@ import java.io.File;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 import static data.FakeData.*;
 
 public class RegistrationFormPage {
 
     public RegistrationFormPage openPage(){
-        open("https://demoqa.com/automation-practice-form");
+        //open("https://demoqa.com/automation-practice-form");
+  final String BASE_URL = System.getProperty("base.url");
+
         $(".main-header").shouldHave(text("Practice Form"));
         return this;
     }
