@@ -13,7 +13,7 @@ public class RegistrationFormPage {
         //open("https://demoqa.com/automation-practice-form");
   final String BASE_URL = System.getProperty("base.url");
 
-        $(".main-header").shouldHave(text("Practice Form"));
+        //$(".main-header").shouldHave(text("Practice Form"));
         return this;
     }
 
